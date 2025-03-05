@@ -1,0 +1,307 @@
+V 0.0.4
+T 2025-03-05T15:41:05.868+00:00
+ID 1|404b0f74-f9d8-11ef-aa60-4c496ce5c463
+I "sys.platform=win32"
+I "python=3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:34:57) [MSC v.1936 64 bit (AMD64)]"
+M a:"tasks.py"
+SR a|0.007
+M c:"Collect tasks"
+M d:"setup"
+M e:""
+P b:c|d|e|e|0
+ST b|0.007
+M f:"regular"
+M g:"\nCollecting tasks from: tasks.py\n"
+C f|g|0.007
+M i:"Desktop.__init__"
+M j:"robocorp.windows._desktop"
+M k:"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\windows\\_desktop.py"
+P h:i|j|k|e|24
+M l:"METHOD"
+SE h|l|0.838
+M m:"PASS"
+EE l|m|1.057
+ET m|e|1.057
+M o:"desktop_automation"
+M p:"tasks"
+M q:"c:\\Users\\AmyHollowell\\OneDrive - 5 Rivers LLC\\Documents\\Automation Practice Codes\\desktop-automation-practice\\tasks.py"
+M r:" Original Hello World Code: Using RPA.Desktop"
+P n:o|p|q|r|12
+ST n|1.057
+M s:"========================= "
+C f|s|1.057
+M t:"Running: "
+C f|t|1.057
+M u:"task_name"
+C u|o|1.057
+M v:" ==========================\n"
+C f|v|1.057
+SE n|l|1.057
+M x:"Desktop.windows_run"
+P w:x|j|k|e|320
+SE w|l|1.057
+M y:"text"
+M z:"str"
+M A:"'notepad.exe'"
+EA y|z|A
+M B:"wait_time"
+M C:"int"
+M D:"1"
+EA B|C|D
+EE l|m|3.875
+M F:"find_window"
+M G:"robocorp.windows"
+M H:"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\windows\\__init__.py"
+P E:F|G|H|e|157
+SE E|l|3.875
+M I:"locator"
+M J:"'subname: Notepad'"
+EA I|z|J
+M K:"search_depth"
+EA K|C|D
+M L:"timeout"
+M M:"NoneType"
+M N:"None"
+EA L|M|N
+EA B|C|D
+M O:"foreground"
+M P:"bool"
+M Q:"True"
+EA O|P|Q
+M R:"raise_error"
+EA R|P|Q
+P S:F|G|H|e|201
+M T:"WindowElement"
+M U:"WindowElement(control:WindowControl class:Notepad name:\"Untitled - Notepad\" id:\"\" pid:24180 executable:\"C:\\Program Files\\WindowsApps\\Microsoft.WindowsNotepad_11.2412.16.0_x64__8wekyb3d8bbwe\\Notepad\\Notepad.exe\" handle:0x2F0C02(3083266))"
+R S|T|U|5.571
+EE l|m|5.571
+P V:o|p|q|e|18
+M W:"notepad"
+AS V|W|T|U|5.571
+M Y:"ControlElement.send_keys"
+M Z:"robocorp.windows._control_element"
+M 0:"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\windows\\_control_element.py"
+P X:Y|Z|0|e|1184
+SE X|l|5.571
+M 2:"keys"
+M 3:"'{CTRL}a{DELETE}'"
+EA 2|z|3
+M 4:"interval"
+M 5:"float"
+M 6:"0.01"
+EA 4|5|6
+M 7:"send_enter"
+M 8:"False"
+EA 7|P|8
+P 9:Y|Z|0|e|1264
+R 9|T|U|6.676
+EE l|m|6.677
+SE X|l|6.677
+M aa:"'Hello World'"
+EA 2|z|aa
+EA 4|5|6
+EA 7|P|8
+R 9|T|U|7.365
+EE l|m|7.365
+M ac:"ControlElement.find"
+P ab:ac|Z|0|e|516
+SE ab|l|7.366
+M ad:"'name:File'"
+EA I|z|ad
+M ae:"8"
+EA K|C|ae
+EA L|M|N
+EA R|P|Q
+P af:ac|Z|0|e|550
+M ag:"ControlElement"
+M ah:"ControlElement(control:MenuItemControl class:Microsoft.UI.Xaml.Controls.MenuBarItem name:File id:File handle:0x0(0) Search info(locator:name:File depth:4 index:1 path:3|1|1|1))"
+R af|ag|ah|7.397
+EE l|m|7.397
+M aj:"ControlElement.click"
+P ai:aj|Z|0|e|811
+SE ai|l|7.397
+EA I|M|N
+P ak:aj|Z|0|e|870
+R ak|ag|ah|7.99
+EE l|m|7.99
+M am:"ControlElement.screenshot"
+P al:am|Z|0|e|1661
+SE al|l|7.99
+M an:"filename"
+M ao:"'test-run.png'"
+EA an|z|ao
+P ap:am|Z|0|e|1717
+M aq:"'c:\\\\Users\\\\AmyHollowell\\\\OneDrive - 5 Rivers LLC\\\\Documents\\\\Automation Practice Codes\\\\desktop-automation-practice\\\\test-run.png'"
+R ap|z|aq|8.846
+EE l|m|8.846
+M as:"WindowElement.close_window"
+M at:"robocorp.windows._window_element"
+M au:"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\windows\\_window_element.py"
+P ar:as|at|au|e|350
+SE ar|l|8.846
+M av:"use_close_button"
+EA av|P|8
+M aw:"close_button_locator"
+M ax:"'control:ButtonControl name:Close'"
+EA aw|z|ax
+P ay:as|at|au|e|392
+R ay|P|Q|9.148
+EE l|m|9.148
+EE l|m|9.148
+C u|o|9.156
+M az:" status: "
+C f|az|9.156
+M aA:"PASS\n"
+C f|aA|9.157
+M aB:"================================================================================\n"
+C f|aB|9.157
+ET m|e|9.157
+M aD:"Teardown tasks"
+M aE:"teardown"
+P aC:aD|aE|e|e|0
+ST aC|9.157
+M aF:"Process snapshot"
+SPS aF|9.158
+M aG:"System information:\nMemory: Total: 15.7 G, Available: 3.0 G, Used: 80.6 %\nCPUs: 12"
+P aH:e|e|e|e|0
+L I|aG|aH|0|9.18
+M aI:"Current Process: python.exe (pid: 71516, status: running)\nCommand Line: C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\python.exe -m robocorp.tasks run tasks.py\nStarted: 10:41:05\nParent pid: 31956\nResident Set Size: 80.7 M\nVirtual Memory Size: 55.0 M"
+L I|aI|aH|0|9.197
+M aJ:"MainThread|Thread ID: 57320 (non daemon)"
+STD aJ|9.197
+M aK:"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\log\\__init__.py"
+M aL:"process_snapshot"
+M aM:"robo_logger.process_snapshot()"
+TBE aK|270|aL|aM
+M aN:"logger_instances"
+M aO:"dict"
+M aP:"{<robocorp.log._robo_logger._RoboLogger object at 0x0000022604964550>: 1}"
+TBV aN|aO|aP
+M aQ:"robo_logger"
+M aR:"_RoboLogger"
+M aS:"<robocorp.log._robo_logger._RoboLogger object at 0x0000022604964550>"
+TBV aQ|aR|aS
+M aT:"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\log\\_robo_logger.py"
+M aU:"new_func"
+M aV:"return func(self, *args, **kwargs)"
+TBE aT|20|aU|aV
+M aW:"self"
+TBV aW|aR|aS
+M aX:"args"
+M aY:"tuple"
+M aZ:"()"
+TBV aX|aY|aZ
+M a0:"kwargs"
+M a1:"{}"
+TBV a0|aO|a1
+M a2:"func"
+M a3:"function"
+M a4:"<function _RoboLogger.process_snapshot at 0x0000022604AAE4D0>"
+TBV a2|a3|a4
+M a5:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE aT|416|aL|a5
+TBV aW|aR|aS
+M a6:"hide_vars"
+TBV a6|P|8
+M a7:"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\log\\_robo_output_impl.py"
+M a8:"self._dump_threads(hide_vars)"
+TBE a7|748|aL|a8
+TBV a6|P|8
+M a9:"log"
+M ba:"module"
+M bb:"<module 'robocorp.log' from 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py'>"
+TBV a9|ba|bb
+M bc:"entry_id"
+M bd:"'ps_0'"
+TBV bc|z|bd
+M be:"entry_type"
+M bf:"'process_snapshot'"
+TBV be|z|bf
+M bg:"psutil"
+M bh:"<module 'psutil' from 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\psutil\\\\__init__.py'>"
+TBV bg|ba|bh
+M bi:"AccessDenied"
+M bj:"type"
+M bk:"<class 'psutil.AccessDenied'>"
+TBV bi|bj|bk
+M bl:"NoSuchProcess"
+M bm:"<class 'psutil.NoSuchProcess'>"
+TBV bl|bj|bm
+M bn:"ZombieProcess"
+M bo:"<class 'psutil.ZombieProcess'>"
+TBV bn|bj|bo
+M bp:"curr_process"
+M bq:"Process"
+M br:"psutil.Process(pid=71516, name='python.exe', status='running', started='10:41:05')"
+TBV bp|bq|br
+M bs:"log_info"
+M bt:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x000002260693B010>"
+TBV bs|a3|bt
+M bu:"memory_info"
+M bv:"'Total: 15.7 G, Available: 3.0 G, Used: 80.6 %'"
+TBV bu|z|bv
+M bw:"child_i"
+M bx:"0"
+TBV bw|C|bx
+M by:"child"
+TBV by|bq|br
+M bz:"name"
+M bA:"'python.exe'"
+TBV bz|z|bA
+M bB:"status"
+M bC:"'running'"
+TBV bB|z|bC
+M bD:"create_time"
+M bE:"'10:41:05'"
+TBV bD|z|bE
+M bF:"ppid"
+M bG:"'31956'"
+TBV bF|z|bG
+M bH:"cmdline"
+M bI:"'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\python.exe -m robocorp.tasks run tasks.py'"
+TBV bH|z|bI
+M bJ:"rss"
+M bK:"'80.7 M'"
+TBV bJ|z|bK
+M bL:"vms"
+M bM:"'55.0 M'"
+TBV bL|z|bM
+M bN:"proc_memory_info"
+M bO:"pmem"
+M bP:"pmem(rss=84590592, vms=57675776, num_page_faults=79116, peak_wset=95797248, wset=84590592, peak_paged_pool=722624, paged_pool=713208, peak_nonpaged_pool=39768, nonpaged_pool=29296, pagefile=57675776, peak_pagefile=69648384, private=57675776)"
+TBV bN|bO|bP
+M bQ:"message"
+M bR:"'Current Process: python.exe (pid: 71516, status: running)\\nCommand Line: C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\python.exe -m robocorp.tasks run tasks.py\\nStarted: 10:41:05\\nParent pid: 31956\\nResident Set Size: 80.7 M\\nVirtual Memory Size: 55.0 M'"
+TBV bQ|z|bR
+M bS:"_RoboOutputImpl"
+M bT:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x00000226023EB430>"
+TBV aW|bS|bT
+M bU:"_dump_threads"
+M bV:"stack.append((f, f.f_lineno))"
+TBE a7|769|bU|bV
+TBV aW|bS|bT
+TBV a6|P|8
+M bW:"thread_id"
+M bX:"57320"
+TBV bW|C|bX
+M bY:"frame"
+M bZ:"<frame at 0x0000022604CAD440, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>"
+TBV bY|bY|bZ
+M b0:"thread"
+M b1:"_MainThread"
+M b2:"<_MainThread(MainThread, started 57320)>"
+TBV b0|b1|b2
+M b3:"title"
+M b4:"'MainThread|Thread ID: 57320 (non daemon)'"
+TBV b3|z|b4
+M b5:"f"
+M b6:"<frame at 0x00000226024EFAD0, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\tasks\\\\_commands.py', line 494, code run>"
+TBV b5|bY|b6
+M b7:"stack"
+M b8:"list"
+M b9:"[(<frame at 0x0000022606FBCEC0, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py', line 270, code process_snapshot>, 270), (<frame at 0x000002260495CA40, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x0000022604DA9080, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 416, code process_snapshot>, 416), (<frame at 0x0000022602614030, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 748, code process_snapshot>, 748), (<frame at 0x0000022604CAD440, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>, 769)]"
+TBV b7|b8|b9
+ETD 9.212
+EPS 9.212
+ET m|e|9.212
+ER m|9.212

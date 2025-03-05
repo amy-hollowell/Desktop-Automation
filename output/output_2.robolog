@@ -1,0 +1,196 @@
+V 0.0.4
+T 2025-03-05T15:37:06.369+00:00
+ID 2|b18a6fbd-f9d7-11ef-b7dd-4c496ce5c463
+I "sys.platform=win32"
+I "python=3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:34:57) [MSC v.1936 64 bit (AMD64)]"
+M a:"tasks.py"
+RR a|0.0
+M o:"desktop_automation"
+M p:"tasks"
+M q:"c:\\Users\\AmyHollowell\\OneDrive - 5 Rivers LLC\\Documents\\Automation Practice Codes\\desktop-automation-practice\\tasks.py"
+M r:" Original Hello World Code: Using RPA.Desktop"
+P n:o|p|q|r|12
+RT n|1.162
+M u:"task_name"
+C u|o|15.249
+M f:"regular"
+M a5:" status: "
+C f|a5|15.265
+M a6:"error"
+M a7:"FAIL\n"
+C a6|a7|15.266
+M a8:"\nCould not locate window with locator: 'subname: Notepad' (timeout: 10.0)\nLocator internal representation: Search(subname:Notepad)\nFound Windows:\ncontrol:PaneControl class:Shell_TrayWnd name:Taskbar id:\"\" pid:11276 executable:C:\\Windows\\explorer.exe handle:0x700D6(458966)\ncontrol:WindowControl class:CASCADIA_HOSTING_WINDOW_CLASS name:C:\\Windows\\SYSTEM32\\cmd.exe id:\"\" pid:57080 executable:\"C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.21.10351.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe\" handle:0x6201B4(6422964)\ncontrol:WindowControl class:CabinetWClass name:\"Desktop and 1 more tab - File Explorer\" id:\"\" pid:11276 executable:C:\\Windows\\explorer.exe handle:0x940794(9701268)\ncontrol:WindowControl class:ApplicationFrameWindow name:\"Sticky Notes\" id:\"\" pid:12100 executable:C:\\Windows\\System32\\ApplicationFrameHost.exe handle:0x10268(66152)\ncontrol:WindowControl class:TeamsWebView name:\"Chat | Amy Hollowell (You) | Microsoft Teams\" id:\"\" pid:6388 executable:\"C:\\Program Files\\WindowsApps\\MSTeams_25031.805.3440.5290_x64__8wekyb3d8bbwe\\ms-teams.exe\" handle:0x506D6(329430)\ncontrol:PaneControl class:Chrome_WidgetWin_1 name:\"Basics of Batch Scripting - GeeksforGeeks - High memory usage - 1.2 GB - Google Chrome\" id:\"\" pid:17060 executable:\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" handle:0xF90328(16319272)\ncontrol:PaneControl class:Chrome_WidgetWin_1 name:\"tasks.py - desktop-automation-practice - Visual Studio Code\" id:\"\" pid:3124 executable:\"C:\\Users\\AmyHollowell\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" handle:0x9F0888(10422408)\ncontrol:WindowControl class:\"Olk Host\" name:\"Mail - Amy Hollowell - Outlook\" id:\"\" pid:68084 executable:\"C:\\Program Files\\WindowsApps\\Microsoft.OutlookForWindows_1.2025.219.400_x64__8wekyb3d8bbwe\\olk.exe\" handle:0xE60698(15074968)\ncontrol:PaneControl class:Progman name:\"Program Manager\" id:\"\" pid:11276 executable:C:\\Windows\\explorer.exe handle:0x10146(65862)\n"
+C a6|a8|15.266
+M a9:"================= "
+C f|a9|15.266
+M ba:"Full Traceback (running "
+C f|ba|15.266
+C u|o|15.266
+M bb:")"
+C f|bb|15.266
+M bc:" ==================\n"
+C f|bc|15.266
+M bd:"traceback"
+M be:"Traceback (most recent call last):\n  File \"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\windows\\_find_window.py\", line 111, in find_window\n    element = find_ui_automation_wrapper(\n  File \"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\windows\\_find_ui_automation.py\", line 450, in find_ui_automation_wrapper\n    raise ElementNotFound(f\"Unable to find element with locator: {locator!r}.\")\nrobocorp.windows._errors.ElementNotFound: Unable to find element with locator: 'subname: Notepad'.\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\tasks\\_commands.py\", line 453, in run\n    result = task.run(**kwargs)\n  File \"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\tasks\\_task.py\", line 57, in run\n    return self.method(**kwargs)\n  File \"c:\\Users\\AmyHollowell\\OneDrive - 5 Rivers LLC\\Documents\\Automation Practice Codes\\desktop-automation-practice\\tasks.py\", line 18, in desktop_automation\n    notepad = windows.find_window(data[\"subname\"], wait_time=1)\n  File \"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\windows\\__init__.py\", line 201, in find_window\n    return desktop().find_window(\n  File \"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\windows\\_desktop.py\", line 192, in find_window\n    return _find_window.find_window(\n  File \"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\windows\\_find_window.py\", line 126, in find_window\n    _raise_window_not_found(locator, timeout, root_element)\n  File \"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\windows\\_find_window.py\", line 156, in _raise_window_not_found\n    raise ElementNotFound(msg)\nrobocorp.windows._errors.ElementNotFound: Could not locate window with locator: 'subname: Notepad' (timeout: 10.0)\nLocator internal representation: Search(subname:Notepad)\nFound Windows:\ncontrol:PaneControl class:Shell_TrayWnd name:Taskbar id:\"\" pid:11276 executable:C:\\Windows\\explorer.exe handle:0x700D6(458966)\ncontrol:WindowControl class:CASCADIA_HOSTING_WINDOW_CLASS name:C:\\Windows\\SYSTEM32\\cmd.exe id:\"\" pid:57080 executable:\"C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.21.10351.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe\" handle:0x6201B4(6422964)\ncontrol:WindowControl class:CabinetWClass name:\"Desktop and 1 more tab - File Explorer\" id:\"\" pid:11276 executable:C:\\Windows\\explorer.exe handle:0x940794(9701268)\ncontrol:WindowControl class:ApplicationFrameWindow name:\"Sticky Notes\" id:\"\" pid:12100 executable:C:\\Windows\\System32\\ApplicationFrameHost.exe handle:0x10268(66152)\ncontrol:WindowControl class:TeamsWebView name:\"Chat | Amy Hollowell (You) | Microsoft Teams\" id:\"\" pid:6388 executable:\"C:\\Program Files\\WindowsApps\\MSTeams_25031.805.3440.5290_x64__8wekyb3d8bbwe\\ms-teams.exe\" handle:0x506D6(329430)\ncontrol:PaneControl class:Chrome_WidgetWin_1 name:\"Basics of Batch Scripting - GeeksforGeeks - High memory usage - 1.2 GB - Google Chrome\" id:\"\" pid:17060 executable:\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" handle:0xF90328(16319272)\ncontrol:PaneControl class:Chrome_WidgetWin_1 name:\"tasks.py - desktop-automation-practice - Visual Studio Code\" id:\"\" pid:3124 executable:\"C:\\Users\\AmyHollowell\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" handle:0x9F0888(10422408)\ncontrol:WindowControl class:\"Olk Host\" name:\"Mail - Amy Hollowell - Outlook\" id:\"\" pid:68084 executable:\"C:\\Program Files\\WindowsApps\\Microsoft.OutlookForWindows_1.2025.219.400_x64__8wekyb3d8bbwe\\olk.exe\" handle:0xE60698(15074968)\ncontrol:PaneControl class:Progman name:\"Program Manager\" id:\"\" pid:11276 executable:C:\\Windows\\explorer.exe handle:0x10146(65862)\n\n"
+C bd|be|15.267
+M bf:"================================================================================\n"
+C f|bf|15.268
+M bg:"FAIL"
+M bh:"Could not locate window with locator: 'subname: Notepad' (timeout: 10.0)\nLocator internal representation: Search(subname:Notepad)\nFound Windows:\ncontrol:PaneControl class:Shell_TrayWnd name:Taskbar id:\"\" pid:11276 executable:C:\\Windows\\explorer.exe handle:0x700D6(458966)\ncontrol:WindowControl class:CASCADIA_HOSTING_WINDOW_CLASS name:C:\\Windows\\SYSTEM32\\cmd.exe id:\"\" pid:57080 executable:\"C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.21.10351.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe\" handle:0x6201B4(6422964)\ncontrol:WindowControl class:CabinetWClass name:\"Desktop and 1 more tab - File Explorer\" id:\"\" pid:11276 executable:C:\\Windows\\explorer.exe handle:0x940794(9701268)\ncontrol:WindowControl class:ApplicationFrameWindow name:\"Sticky Notes\" id:\"\" pid:12100 executable:C:\\Windows\\System32\\ApplicationFrameHost.exe handle:0x10268(66152)\ncontrol:WindowControl class:TeamsWebView name:\"Chat | Amy Hollowell (You) | Microsoft Teams\" id:\"\" pid:6388 executable:\"C:\\Program Files\\WindowsApps\\MSTeams_25031.805.3440.5290_x64__8wekyb3d8bbwe\\ms-teams.exe\" handle:0x506D6(329430)\ncontrol:PaneControl class:Chrome_WidgetWin_1 name:\"Basics of Batch Scripting - GeeksforGeeks - High memory usage - 1.2 GB - Google Chrome\" id:\"\" pid:17060 executable:\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" handle:0xF90328(16319272)\ncontrol:PaneControl class:Chrome_WidgetWin_1 name:\"tasks.py - desktop-automation-practice - Visual Studio Code\" id:\"\" pid:3124 executable:\"C:\\Users\\AmyHollowell\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" handle:0x9F0888(10422408)\ncontrol:WindowControl class:\"Olk Host\" name:\"Mail - Amy Hollowell - Outlook\" id:\"\" pid:68084 executable:\"C:\\Program Files\\WindowsApps\\Microsoft.OutlookForWindows_1.2025.219.400_x64__8wekyb3d8bbwe\\olk.exe\" handle:0xE60698(15074968)\ncontrol:PaneControl class:Progman name:\"Program Manager\" id:\"\" pid:11276 executable:C:\\Windows\\explorer.exe handle:0x10146(65862)"
+ET bg|bh|15.268
+M bj:"Teardown tasks"
+M bk:"teardown"
+M e:""
+P bi:bj|bk|e|e|0
+ST bi|15.268
+M bl:"Process snapshot"
+SPS bl|15.271
+M bm:"System information:\nMemory: Total: 15.7 G, Available: 3.4 G, Used: 78.3 %\nCPUs: 12"
+P bn:e|e|e|e|0
+L I|bm|bn|0|15.282
+M bo:"Current Process: python.exe (pid: 15164, status: running)\nCommand Line: C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\python.exe -m robocorp.tasks run tasks.py\nStarted: 10:37:05\nParent pid: 9868\nResident Set Size: 84.9 M\nVirtual Memory Size: 56.7 M"
+L I|bo|bn|0|15.296
+M bp:"MainThread|Thread ID: 68572 (non daemon)"
+STD bp|15.296
+M bq:"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\log\\__init__.py"
+M br:"process_snapshot"
+M bs:"robo_logger.process_snapshot()"
+TBE bq|270|br|bs
+M bt:"logger_instances"
+M 0:"dict"
+M bu:"{<robocorp.log._robo_logger._RoboLogger object at 0x0000023CC10B4550>: 1}"
+TBV bt|0|bu
+M bv:"robo_logger"
+M bw:"_RoboLogger"
+M bx:"<robocorp.log._robo_logger._RoboLogger object at 0x0000023CC10B4550>"
+TBV bv|bw|bx
+M by:"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\log\\_robo_logger.py"
+M bz:"new_func"
+M bA:"return func(self, *args, **kwargs)"
+TBE by|20|bz|bA
+M W:"self"
+TBV W|bw|bx
+M bB:"args"
+M ax:"tuple"
+M bC:"()"
+TBV bB|ax|bC
+M Z:"kwargs"
+M 2:"{}"
+TBV Z|0|2
+M bD:"func"
+M ak:"function"
+M bE:"<function _RoboLogger.process_snapshot at 0x0000023CC12EE4D0>"
+TBV bD|ak|bE
+M bF:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE by|416|br|bF
+TBV W|bw|bx
+M bG:"hide_vars"
+M P:"bool"
+M bH:"False"
+TBV bG|P|bH
+M bI:"C:\\ProgramData\\robocorp\\ht\\ac5d269_5a1fac3_9fcd2534\\lib\\site-packages\\robocorp\\log\\_robo_output_impl.py"
+M bJ:"self._dump_threads(hide_vars)"
+TBE bI|748|br|bJ
+TBV bG|P|bH
+M bK:"log"
+M ac:"module"
+M bL:"<module 'robocorp.log' from 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py'>"
+TBV bK|ac|bL
+M bM:"entry_id"
+M z:"str"
+M bN:"'ps_2'"
+TBV bM|z|bN
+M bO:"entry_type"
+M bP:"'process_snapshot'"
+TBV bO|z|bP
+M bQ:"psutil"
+M bR:"<module 'psutil' from 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\psutil\\\\__init__.py'>"
+TBV bQ|ac|bR
+M bS:"AccessDenied"
+M an:"type"
+M bT:"<class 'psutil.AccessDenied'>"
+TBV bS|an|bT
+M bU:"NoSuchProcess"
+M bV:"<class 'psutil.NoSuchProcess'>"
+TBV bU|an|bV
+M bW:"ZombieProcess"
+M bX:"<class 'psutil.ZombieProcess'>"
+TBV bW|an|bX
+M bY:"curr_process"
+M bZ:"Process"
+M b0:"psutil.Process(pid=15164, name='python.exe', status='running', started='10:37:05')"
+TBV bY|bZ|b0
+M b1:"log_info"
+M b2:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x0000023CC386DE10>"
+TBV b1|ak|b2
+M b3:"memory_info"
+M b4:"'Total: 15.7 G, Available: 3.4 G, Used: 78.3 %'"
+TBV b3|z|b4
+M b5:"child_i"
+M C:"int"
+M b6:"0"
+TBV b5|C|b6
+M b7:"child"
+TBV b7|bZ|b0
+M b8:"name"
+M b9:"'python.exe'"
+TBV b8|z|b9
+M ca:"status"
+M cb:"'running'"
+TBV ca|z|cb
+M cc:"create_time"
+M cd:"'10:37:05'"
+TBV cc|z|cd
+M ce:"ppid"
+M cf:"'9868'"
+TBV ce|z|cf
+M cg:"cmdline"
+M ch:"'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\python.exe -m robocorp.tasks run tasks.py'"
+TBV cg|z|ch
+M ci:"rss"
+M cj:"'84.9 M'"
+TBV ci|z|cj
+M ck:"vms"
+M cl:"'56.7 M'"
+TBV ck|z|cl
+M cm:"proc_memory_info"
+M cn:"pmem"
+M co:"pmem(rss=88989696, vms=59424768, num_page_faults=89717, peak_wset=111738880, wset=88989696, peak_paged_pool=730448, paged_pool=714344, peak_nonpaged_pool=36520, nonpaged_pool=29712, pagefile=59424768, peak_pagefile=83222528, private=59424768)"
+TBV cm|cn|co
+M cp:"message"
+M cq:"'Current Process: python.exe (pid: 15164, status: running)\\nCommand Line: C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\python.exe -m robocorp.tasks run tasks.py\\nStarted: 10:37:05\\nParent pid: 9868\\nResident Set Size: 84.9 M\\nVirtual Memory Size: 56.7 M'"
+TBV cp|z|cq
+M cr:"_RoboOutputImpl"
+M cs:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x0000023CBEBFB430>"
+TBV W|cr|cs
+M ct:"_dump_threads"
+M cu:"stack.append((f, f.f_lineno))"
+TBE bI|769|ct|cu
+TBV W|cr|cs
+TBV bG|P|bH
+M cv:"thread_id"
+M cw:"68572"
+TBV cv|C|cw
+M cx:"frame"
+M cy:"<frame at 0x0000023CC1531C40, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>"
+TBV cx|cx|cy
+M cz:"thread"
+M cA:"_MainThread"
+M cB:"<_MainThread(MainThread, started 68572)>"
+TBV cz|cA|cB
+M cC:"title"
+M cD:"'MainThread|Thread ID: 68572 (non daemon)'"
+TBV cC|z|cD
+M cE:"f"
+M cF:"<frame at 0x0000023CBE9E8A50, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\tasks\\\\_commands.py', line 494, code run>"
+TBV cE|cx|cF
+M cG:"stack"
+M aV:"list"
+M cH:"[(<frame at 0x0000023CC2F01090, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\__init__.py', line 270, code process_snapshot>, 270), (<frame at 0x0000023CC10ACA40, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x0000023CC2ED5D80, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_logger.py', line 416, code process_snapshot>, 416), (<frame at 0x0000023CBEFA96D0, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 748, code process_snapshot>, 748), (<frame at 0x0000023CC1531C40, file 'C:\\\\ProgramData\\\\robocorp\\\\ht\\\\ac5d269_5a1fac3_9fcd2534\\\\lib\\\\site-packages\\\\robocorp\\\\log\\\\_robo_output_impl.py', line 773, code _dump_threads>, 769)]"
+TBV cG|aV|cH
+ETD 15.328
+EPS 15.328
+M m:"PASS"
+ET m|e|15.328
+M a0:"ERROR"
+ER a0|15.328
