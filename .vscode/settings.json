@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "c:/GitHub Repos/Desktop-Automation/."
+    ]
+}
